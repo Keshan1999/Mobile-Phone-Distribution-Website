@@ -1,0 +1,93 @@
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content=" width=device-width, initail-scale=1.0">
+        <link rel="stylesheet" href="css/cont.css">
+    </head>
+    <body>
+        
+         <header>
+            <nav>
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="index.html" class="logo">
+                            <div class="Mp">
+                                <p class="for-dark" class="for-light"><span>Mp</span>StoreMart</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="nav-link">HOME</a>
+                    </li>
+                    <li>
+                        <a href="category.html" class="nav-link">SHOP_NOW</a>
+                    </li>
+                    <li>
+                        <a href="login.html" class="nav-link">SIGN_OUT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+         </header>
+
+         <main>
+            <section class="contact">
+                <div class="container">
+                    <div class="left">
+                        <div class="form-wrapper">
+                            <div class="contact-heading">
+                                <h1>Connect with us<span>.</span></h1>
+                            </div>
+
+                            <form action="contact.html" method="post" class="contact-form">
+                                <div class="input-wrap">
+                                    <input class="contact-input" autocomplete="off" name="FirstName" type="text" required >
+                                    <label>First_Name</label>
+                                    <i class="icon fa-solid fa-address-card"></i>
+                                </div>
+
+                                <div class="input-wrap">
+                                    <input class="contact-input" autocomplete="off" name="LastName" type="text" required >
+                                    <label>Last_Name</label>
+                                    <i class="icon fa-solid fa-address-card"></i>
+                                </div>
+
+                                <div class="input-wrap w-100">
+                                    <input class="contact-input" autocomplete="off" name="Email" type="email" required >
+                                    <label>Email</label>
+                                    <i class="icon fa-solid fa-envelope"></i>
+                                </div>
+
+                                <div class="input-wrap textarea w-100">
+                                    <textarea name="Message" class="contact-input" autocomplete="off" type="text" required ></textarea>
+                                    <label>Message</label>
+                                    <i class="icon fa-solid fa-message"></i>
+                                </div>
+                                <div class="contact-buttons w-100">
+                                    <button class="btn upload">
+                                        <span>
+                                            <i class="fa-solid fa-paperclip"></i>
+                                        </span>Add attachment
+                                        <input type="file" name="attachment">
+                                    </button>
+                                    <input type="submit" value="Send message" class="btn">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="image-wrapper">
+                            <img src="img/ideas-desarrollo-de-apps.gif" class="img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+         </main>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js">
+         </script>
+         <script src="js/contact.js"></script>
+    </body>
+</html>

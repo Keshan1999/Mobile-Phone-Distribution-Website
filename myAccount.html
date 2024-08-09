@@ -1,0 +1,76 @@
+<!-- Customer account page HTML code -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - My Website</title>
+    <link rel="stylesheet" href="css/myAccount.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+            <li>
+                <a href="category.html" class="logo">
+                    <div class="Mp">
+                        <p class="for-dark" class="for-light"><span>Mp</span>StoreMart</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+            <li>
+              <a href="myOrders.html">MY_ORDERS</a>
+            </li>
+            <li>
+                <a href="myAccount.html">MY_ACCOUNT</a>
+            </li>
+            <li>
+                  <a href="contact.html">CONTACT_US</a>
+            </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>My Account</h1>
+      <div class="profile">
+        <div class="profile-picture">
+            <h2>Profile Picture:</h2><br><br>
+          <img src="img/profile.png" alt="Profile Picture">
+          <div class="upload-button">
+            <input type="file" id="profile-picture-file">
+            <button type="button" id="upload-profile-picture">Upload</button>
+          </div>
+        </div>
+        <div class="animation">
+            <img src="img/home_back_image.gif">
+        </div>
+        <div class="profile-info">
+          <div class="name">
+            <h2>Name:</h2>
+            <p>WhiteAway</p>
+            <button type="button" class="edit-button" id="edit-name">Edit</button>
+          </div>
+          <div class="email">
+            <h2>Email:</h2>
+            <p>whiteaway@gmail.com</p>
+            <button type="button" class="edit-button" id="edit-email">Edit</button>
+          </div>
+          <div class="phone-number">
+            <h2>Phone Number:</h2>
+            <p>+94 668877000</p>
+            <button type="button" class="edit-button" id="edit-phone-number">Edit</button>
+          </div>
+          <div class="address">
+            <h2>Address:</h2>
+            <p>No.310, Colombo Street, Kandy.</p>
+            <button type="button" class="edit-button" id="edit-address">Edit</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/myAccount.js"></script>
+  </body>
+</html>

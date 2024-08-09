@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - My Website</title>
+  <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+            <a href="category.html" class="logo">
+                <div class="Mp">
+                    <p class="for-dark" class="for-light"><span>Mp</span>StoreMart</p>
+                </div>
+            </a>
+        </li>
+        <li>
+          <a href="index.html">HOME</a>
+        </li>
+        <li>
+          <a href="myOrders.html">MY_ORDERS</a>
+        </li>
+        <li>
+            <a href="myAccount.html">MY_ACCOUNT</a>
+        </li>
+        <li>
+              <a href="contact.html">CONTACT_US</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="payment-methods">
+      <h1>Payment Methods</h1>
+      <div class="payment-options">
+        <div class="item-options">
+        <h2>Select Payment Options:</h2>
+        <div class="animation">
+            <img src="img/DarkMasculineFrillneckedlizard-size_restricted.gif">
+        </div>
+        <select id="color">
+            <option value="black">VISA</option>
+            <option value="white">MASTER</option>
+            <option value="silver">PayPal</option>
+            <option value="silver">Apple Pay</option>
+          </select>
+        </div>
+      </div>
+      <div class="payment-form">
+        <h2>Payment Form:</h2>
+        <form action="#" method="post" onsubmit="return validateForm()">
+          <div class="form-group">
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" placeholder="0000-0000-0000-0000" required>
+          </div>
+          <div class="form-group">
+            <label for="card-holder">Card Holder Name:</label>
+            <input type="text" id="card-holder" name="card-holder" placeholder="Enter card holder name" required>
+          </div>
+          <div class="form-group">
+            <label for="exp-date">Expiration Date:</label>
+            <input type="text" id="exp-date" name="exp-date" placeholder="MM/YY" required>
+          </div>
+          <div class="form-group">
+            <label for="cvc">CCV Number:</label>
+            <input type="text" id="cvc" name="cvc" placeholder="123" required>
+          </div>
+          <button type="submit" class="pay-button">Pay</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="js/payment.js"></script>
+</body>
+</html>

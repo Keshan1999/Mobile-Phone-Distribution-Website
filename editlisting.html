@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Listing </title>
+  <link rel="stylesheet" href="css/editlisting.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+          <li>
+              <a href="dashboard.html" class="logo">
+                  <div class="Mp">
+                      <p class="for-dark" class="for-light"><span>Mp</span>StoreMart</p>
+                  </div>
+              </a>
+          </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="product-listing">
+      <h1 class="product-listing__title">Edit Listing</h1>
+      <form class="product-listing__form" action="#">
+        <div class="form-column">
+          <div class="form-field">
+            <label for="brand">Brand:</label>
+            <select id="brand" name="brand">
+              <option value="apple">Apple</option>
+              <option value="samsung">Samsung</option>
+              <option value="oppo" selected>Oppo</option>
+              <option value="vivo">Vivo</option>
+            </select>
+          </div>
+          
+          <div class="form-field">
+            <label for="color">Color:</label>
+            <select id="color" name="color">
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="silver">Silver</option>
+              <option value="gold">Gold</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="display-size">Display Size:</label>
+            <input type="text" id="display-size" name="display-size" required>
+          </div>
+          <div class="form-field">
+            <label for="weight">Weight:</label>
+            <input type="text" id="weight" name="weight" required>
+          </div>
+           <div class="form-field">
+            <label for="photos">Photos:</label>
+            <input type="file" id="photos" name="photos" multiple>
+          </div>
+        </div>
+        <div class="form-column">
+          <div class="form-field">
+            <label for="model">Model Number:</label>
+            <select id="model" name="model" required>
+              <option value="">-- Select Model Number --</option>
+              <option value="oppo-a17k">Oppo A17k</option>
+              <option value="oppo-a16k">Oppo A16k</option>
+              <option value="oppo-a17">Oppo A17</option>
+              <option value="oppo-f19">Oppo F19</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" required>
+          </div>
+          <div class="form-field">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+          </div>
+        </div>
+        
+      </form>
+      <div class="form-field">
+          <button type="submit">Save</button>
+        </div>
+    </section>
+  </main>
+</body>
+</html>
